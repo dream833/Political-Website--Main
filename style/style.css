@@ -26,7 +26,7 @@
     padding: 20px;
     background-color: teal;
     color: #fff;
-    position: sticky;
+    position:fixed ;
     width: 100%;
   }
   
@@ -63,11 +63,11 @@
   
   .dropdown {
     background-color: rgb(1, 139, 139);
-    padding: 1em 0;
+    padding:5px;
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
-    top: 35px;
+    top: 15px;
   }
   
   .dropdown li + li {
@@ -82,6 +82,7 @@
   
   .dropdown li:hover {
     background-color: #4c9e9e;
+    padding-bottom: 50px;
   }
   
   .services:hover .dropdown {
@@ -122,7 +123,7 @@ input[type=checkbox] {
     }
   
     .menu li + li {
-      margin-top: 12px;
+      margin-top: 10px;
     }
   
     input[type=checkbox]:checked ~ .menu {
@@ -137,6 +138,7 @@ input[type=checkbox] {
       left: 50%;
       top: 30px;
       transform: translateX(35%);
+      padding-top: 10px;
     }
   
     .dropdown li:hover {
@@ -150,7 +152,7 @@ input[type=checkbox] {
  
  .slider {
     width: 100%;
-    overflow: hidden;
+    
   }
   
   .slide {
@@ -183,37 +185,17 @@ input[type=checkbox] {
   }
   /*slider style end */
 
+.card{
+    overflow: hidden;
+}
+
 .card:hover{
     background-color: #4c9e9e;
     color: white;
-    text-overflow: clip;
+     
     
 
 }
 
 
-.footer-top { padding: 60px 0; background: #333; text-align: left; color: #aaa; }
-.footer-top h3 { padding-bottom: 10px; color: #fff; }
-
-.footer-about img.logo-footer { max-width: 200px; margin-top: 0; margin-bottom: 18px; }
-.footer-about p a { border: 0; }
-.footer-about p a:hover, .footer-about p a:focus { border: 0; }
-
-.footer-contact p { word-wrap: break-word; }
-.footer-contact i { padding-right: 10px; font-size: 18px; color: #666; }
-.footer-contact p a { border: 0; }
-.footer-contact p a:hover, .footer-contact p a:focus { border: 0; }
-
-.footer-links a { color: #aaa; border: 0; }
-.footer-links a:hover, .footer-links a:focus { color: #fff; }
-
-.footer-bottom { padding: 15px 0 17px 0; background: #444; text-align: left; color: #aaa; }
-
-.footer-social { padding-top: 3px; text-align: right; }
-.footer-social a { margin-left: 20px; color: #777; border: 0; }
-.footer-social a:hover, .footer-social a:focus { color: #79a05f; border: 0; }
-.footer-social i { font-size: 24px; vertical-align: middle; }
-
-.footer-copyright { padding-top: 5px; }
-.footer-copyright a { color: #fff; border: 0; }
-.footer-copyright a:hover, .footer-copyright a:focus { color: #aaa; border: 0; }
+.footer-bottom { padding: 5px 10px 12px 0; background: #444; text-align: center; color: #aaa;position: static; }
